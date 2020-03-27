@@ -1,0 +1,693 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-vq100
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/clk_divider.vhd" in Library work.
+Entity <clk_divider> compiled.
+Entity <clk_divider> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/wash.vhd" in Library work.
+Entity <wash> compiled.
+WARNING:HDLParsers:1406 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/wash.vhd" Line 47. No sensitivity list and no wait in the process
+Entity <wash> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/spin.vhd" in Library work.
+WARNING:HDLParsers:1406 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/spin.vhd" Line 47. No sensitivity list and no wait in the process
+Architecture behavioral of Entity spin is up to date.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhd" in Library work.
+WARNING:HDLParsers:1406 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhd" Line 48. No sensitivity list and no wait in the process
+Architecture behavioral of Entity rinse is up to date.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/main.vhd" in Library work.
+WARNING:HDLParsers:1406 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/main.vhd" Line 103. No sensitivity list and no wait in the process
+Architecture behavioral of Entity main is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <main> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clk_divider> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <wash> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <spin> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rinse> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <main> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/main.vhd" line 103: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>, <start>, <mode_select>, <wash_zero>, <spin_zero>, <rinse_zero>, <finished>
+Entity <main> analyzed. Unit <main> generated.
+
+Analyzing Entity <clk_divider> in library <work> (Architecture <behavioral>).
+Entity <clk_divider> analyzed. Unit <clk_divider> generated.
+
+Analyzing Entity <wash> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/wash.vhd" line 57: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk>
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/wash.vhd" line 47: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <dec>, <rst>
+Entity <wash> analyzed. Unit <wash> generated.
+
+Analyzing Entity <spin> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/spin.vhd" line 56: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk>
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/spin.vhd" line 47: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <dec>, <rst>
+Entity <spin> analyzed. Unit <spin> generated.
+
+Analyzing Entity <rinse> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhd" line 57: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk>
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhd" line 48: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <dec>, <rst>
+Entity <rinse> analyzed. Unit <rinse> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk_divider>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/clk_divider.vhd".
+    Found 32-bit up counter for signal <counter>.
+    Found 1-bit register for signal <temp>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clk_divider> synthesized.
+
+
+Synthesizing Unit <wash>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/wash.vhd".
+    Found 1-bit register for signal <zero>.
+    Found 32-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <wash> synthesized.
+
+
+Synthesizing Unit <spin>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/spin.vhd".
+    Found 1-bit register for signal <zero>.
+    Found 32-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <spin> synthesized.
+
+
+Synthesizing Unit <rinse>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhd".
+    Found 1-bit register for signal <zero>.
+    Found 32-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <rinse> synthesized.
+
+
+Synthesizing Unit <main>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/main.vhd".
+INFO:Xst:1608 - Relative priorities of control signals on register <mode_select> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 1-bit latch for signal <rinse_dec>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rst_counter>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dec_led>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <spin_dec>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <zero_led>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <finished>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <wash_dec>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <state_indicator>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:1608 - Relative priorities of control signals on register <Q> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 2-bit latch for signal <mode_select>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4x3-bit ROM for signal <mode_select$rom0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <dec_led$mux0005>.
+    Found 1-of-4 decoder for signal <state_indicator$mux0005>.
+    Found 1-bit 4-to-1 multiplexer for signal <zero_led$mux0005>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <main> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x3-bit ROM                                           : 1
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 4
+ 1-bit register                                        : 4
+# Latches                                              : 9
+ 1-bit latch                                           : 7
+ 2-bit latch                                           : 1
+ 4-bit latch                                           : 1
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 2
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x3-bit ROM                                           : 1
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Latches                                              : 9
+ 1-bit latch                                           : 7
+ 2-bit latch                                           : 1
+ 4-bit latch                                           : 1
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 2
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <main> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 21.
+Latch mode_select_1 has been replicated 1 time(s) to handle iob=true attribute.
+Latch mode_select_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 132
+ Flip-Flops                                            : 132
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : main.ngr
+Top Level Output File Name         : main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 560
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 124
+#      LUT2                        : 105
+#      LUT3                        : 3
+#      LUT4                        : 34
+#      MUXCY                       : 156
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 147
+#      FDC                         : 3
+#      FDCE                        : 93
+#      FDE                         : 1
+#      FDPE                        : 3
+#      FDR                         : 32
+#      LDCE                        : 1
+#      LDCP                        : 4
+#      LDE_1                       : 9
+#      LDP                         : 1
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 2
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50avq100-5 
+
+ Number of Slices:                      151  out of    704    21%  
+ Number of Slice Flip Flops:            140  out of   1408     9%  
+ Number of 4 input LUTs:                273  out of   1408    19%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of     68    16%  
+    IOB Flip Flops:                       7
+ Number of GCLKs:                         4  out of     24    16%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Inst_rinse/zero                    | NONE(finished)         | 1     |
+start                              | IBUF+BUFG              | 6     |
+Inst_wash/zero                     | NONE(mode_select_0)    | 4     |
+reset                              | IBUF+BUFG              | 4     |
+clk                                | BUFGP                  | 33    |
+Inst_clk_divider/temp1             | BUFG                   | 99    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------+---------------------------+-------+
+Control Signal                                   | Buffer(FF name)           | Load  |
+-------------------------------------------------+---------------------------+-------+
+rst_counter(rst_counter:Q)                       | NONE(Inst_rinse/counter_0)| 99    |
+mode_select_Q_0_or0000(mode_select_Q_0_or00001:O)| NONE(mode_select_0)       | 2     |
+mode_select_Q_1_or0000(mode_select_Q_1_or00001:O)| NONE(mode_select_1)       | 2     |
+mode_select_and0000(mode_select_and00001:O)      | NONE(mode_select_1)       | 2     |
+mode_select_or0000(mode_select_or00001:O)        | NONE(mode_select_0)       | 2     |
+reset                                            | IBUF                      | 2     |
+-------------------------------------------------+---------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.788ns (Maximum Frequency: 172.773MHz)
+   Minimum input arrival time before clock: 2.724ns
+   Maximum output required time after clock: 5.382ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'start'
+  Clock period: 1.790ns (frequency: 558.675MHz)
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Delay:               1.790ns (Levels of Logic = 1)
+  Source:            wash_dec (LATCH)
+  Destination:       dec_led (LATCH)
+  Source Clock:      start rising
+  Destination Clock: start rising
+
+  Data Path: wash_dec to dec_led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            2   0.629   0.403  wash_dec (wash_dec)
+     LUT4:I2->O            1   0.561   0.000  Mmux_dec_led_mux000521 (dec_led_mux0005)
+     LDE_1:D                   0.197          dec_led
+    ----------------------------------------
+    Total                      1.790ns (1.387ns logic, 0.403ns route)
+                                       (77.5% logic, 22.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.803ns (frequency: 208.205MHz)
+  Total number of paths / destination ports: 1585 / 66
+-------------------------------------------------------------------------
+Delay:               4.803ns (Levels of Logic = 32)
+  Source:            Inst_clk_divider/counter_1 (FF)
+  Destination:       Inst_clk_divider/counter_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Inst_clk_divider/counter_1 to Inst_clk_divider/counter_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.495   0.488  Inst_clk_divider/counter_1 (Inst_clk_divider/counter_1)
+     LUT1:I0->O            1   0.561   0.000  Inst_clk_divider/Mcount_counter_cy<1>_rt (Inst_clk_divider/Mcount_counter_cy<1>_rt)
+     MUXCY:S->O            1   0.523   0.000  Inst_clk_divider/Mcount_counter_cy<1> (Inst_clk_divider/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<2> (Inst_clk_divider/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<3> (Inst_clk_divider/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<4> (Inst_clk_divider/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<5> (Inst_clk_divider/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<6> (Inst_clk_divider/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<7> (Inst_clk_divider/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<8> (Inst_clk_divider/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<9> (Inst_clk_divider/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<10> (Inst_clk_divider/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<11> (Inst_clk_divider/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<12> (Inst_clk_divider/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<13> (Inst_clk_divider/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<14> (Inst_clk_divider/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<15> (Inst_clk_divider/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<16> (Inst_clk_divider/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<17> (Inst_clk_divider/Mcount_counter_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<18> (Inst_clk_divider/Mcount_counter_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<19> (Inst_clk_divider/Mcount_counter_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<20> (Inst_clk_divider/Mcount_counter_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<21> (Inst_clk_divider/Mcount_counter_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<22> (Inst_clk_divider/Mcount_counter_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<23> (Inst_clk_divider/Mcount_counter_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<24> (Inst_clk_divider/Mcount_counter_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<25> (Inst_clk_divider/Mcount_counter_cy<25>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<26> (Inst_clk_divider/Mcount_counter_cy<26>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<27> (Inst_clk_divider/Mcount_counter_cy<27>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<28> (Inst_clk_divider/Mcount_counter_cy<28>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<29> (Inst_clk_divider/Mcount_counter_cy<29>)
+     MUXCY:CI->O           0   0.065   0.000  Inst_clk_divider/Mcount_counter_cy<30> (Inst_clk_divider/Mcount_counter_cy<30>)
+     XORCY:CI->O           1   0.654   0.000  Inst_clk_divider/Mcount_counter_xor<31> (Result<31>)
+     FDR:D                     0.197          Inst_clk_divider/counter_31
+    ----------------------------------------
+    Total                      4.803ns (4.315ns logic, 0.488ns route)
+                                       (89.8% logic, 10.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_clk_divider/temp1'
+  Clock period: 5.788ns (frequency: 172.773MHz)
+  Total number of paths / destination ports: 7824 / 195
+-------------------------------------------------------------------------
+Delay:               5.788ns (Levels of Logic = 33)
+  Source:            Inst_wash/counter_1 (FF)
+  Destination:       Inst_wash/counter_31 (FF)
+  Source Clock:      Inst_clk_divider/temp1 rising
+  Destination Clock: Inst_clk_divider/temp1 rising
+
+  Data Path: Inst_wash/counter_1 to Inst_wash/counter_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.495   0.488  Inst_wash/counter_1 (Inst_wash/counter_1)
+     LUT1:I0->O            1   0.561   0.000  Inst_wash/Mcount_counter_cy<1>_rt (Inst_wash/Mcount_counter_cy<1>_rt)
+     MUXCY:S->O            1   0.523   0.000  Inst_wash/Mcount_counter_cy<1> (Inst_wash/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<2> (Inst_wash/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<3> (Inst_wash/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<4> (Inst_wash/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<5> (Inst_wash/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<6> (Inst_wash/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<7> (Inst_wash/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<8> (Inst_wash/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<9> (Inst_wash/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<10> (Inst_wash/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<11> (Inst_wash/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<12> (Inst_wash/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<13> (Inst_wash/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<14> (Inst_wash/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<15> (Inst_wash/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<16> (Inst_wash/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<17> (Inst_wash/Mcount_counter_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<18> (Inst_wash/Mcount_counter_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<19> (Inst_wash/Mcount_counter_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<20> (Inst_wash/Mcount_counter_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<21> (Inst_wash/Mcount_counter_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<22> (Inst_wash/Mcount_counter_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<23> (Inst_wash/Mcount_counter_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<24> (Inst_wash/Mcount_counter_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<25> (Inst_wash/Mcount_counter_cy<25>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<26> (Inst_wash/Mcount_counter_cy<26>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<27> (Inst_wash/Mcount_counter_cy<27>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<28> (Inst_wash/Mcount_counter_cy<28>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_wash/Mcount_counter_cy<29> (Inst_wash/Mcount_counter_cy<29>)
+     MUXCY:CI->O           0   0.065   0.000  Inst_wash/Mcount_counter_cy<30> (Inst_wash/Mcount_counter_cy<30>)
+     XORCY:CI->O           1   0.654   0.423  Inst_wash/Mcount_counter_xor<31> (Result<31>1)
+     LUT2:I1->O            1   0.562   0.000  Inst_wash/Mcount_counter_eqn_311 (Inst_wash/Mcount_counter_eqn_31)
+     FDCE:D                    0.197          Inst_wash/counter_31
+    ----------------------------------------
+    Total                      5.788ns (4.877ns logic, 0.911ns route)
+                                       (84.3% logic, 15.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_rinse/zero'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.579ns (Levels of Logic = 2)
+  Source:            start (PAD)
+  Destination:       finished (LATCH)
+  Destination Clock: Inst_rinse/zero falling
+
+  Data Path: start to finished
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.824   0.499  start_IBUF (start_IBUF1)
+     INV:I->O              5   0.562   0.538  finished_0_not00001_INV_0 (finished_0_not0000)
+     LDCE:GE                   0.156          finished
+    ----------------------------------------
+    Total                      2.579ns (1.542ns logic, 1.037ns route)
+                                       (59.8% logic, 40.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'start'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              2.724ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       wash_dec (LATCH)
+  Destination Clock: start rising
+
+  Data Path: reset to wash_dec
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.824   0.643  reset_IBUF (reset_IBUF1)
+     INV:I->O              5   0.562   0.538  dec_led_0_not00001_INV_0 (dec_led_0_not0000)
+     LDE_1:GE                  0.156          dec_led
+    ----------------------------------------
+    Total                      2.724ns (1.542ns logic, 1.182ns route)
+                                       (56.6% logic, 43.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.579ns (Levels of Logic = 2)
+  Source:            start (PAD)
+  Destination:       state_indicator_0 (LATCH)
+  Destination Clock: reset rising
+
+  Data Path: start to state_indicator_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.824   0.499  start_IBUF (start_IBUF1)
+     INV:I->O              5   0.562   0.538  finished_0_not00001_INV_0 (finished_0_not0000)
+     LDE_1:GE                  0.156          state_indicator_3
+    ----------------------------------------
+    Total                      2.579ns (1.542ns logic, 1.037ns route)
+                                       (59.8% logic, 40.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'start'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.382ns (Levels of Logic = 1)
+  Source:            zero_led (LATCH)
+  Destination:       zero_led (PAD)
+  Source Clock:      start rising
+
+  Data Path: zero_led to zero_led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            1   0.629   0.357  zero_led (zero_led_OBUF)
+     OBUF:I->O                 4.396          zero_led_OBUF (zero_led)
+    ----------------------------------------
+    Total                      5.382ns (5.025ns logic, 0.357ns route)
+                                       (93.4% logic, 6.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_wash/zero'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.382ns (Levels of Logic = 1)
+  Source:            mode_select_1_1 (LATCH)
+  Destination:       selected<1> (PAD)
+  Source Clock:      Inst_wash/zero falling
+
+  Data Path: mode_select_1_1 to selected<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             1   0.629   0.357  mode_select_1_1 (mode_select_1_1)
+     OBUF:I->O                 4.396          selected_1_OBUF (selected<1>)
+    ----------------------------------------
+    Total                      5.382ns (5.025ns logic, 0.357ns route)
+                                       (93.4% logic, 6.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.382ns (Levels of Logic = 1)
+  Source:            state_indicator_3 (LATCH)
+  Destination:       state_indicator<3> (PAD)
+  Source Clock:      reset rising
+
+  Data Path: state_indicator_3 to state_indicator<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            1   0.629   0.357  state_indicator_3 (state_indicator_3)
+     OBUF:I->O                 4.396          state_indicator_3_OBUF (state_indicator<3>)
+    ----------------------------------------
+    Total                      5.382ns (5.025ns logic, 0.357ns route)
+                                       (93.4% logic, 6.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.72 secs
+ 
+--> 
+
+Total memory usage is 4521816 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

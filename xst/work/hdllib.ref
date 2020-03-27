@@ -1,0 +1,10 @@
+AR rinse behavioral "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhd" sub00/vhpl09 1576408539
+AR main behavioral "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/main.vhd" sub00/vhpl03 1576408541
+EN wash NULL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/wash.vhd" sub00/vhpl04 1576408534
+EN spin NULL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/spin.vhd" sub00/vhpl06 1576408536
+AR clk_divider behavioral "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/clk_divider.vhd" sub00/vhpl01 1576408533
+EN clk_divider NULL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/clk_divider.vhd" sub00/vhpl00 1576408532
+EN main NULL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/main.vhd" sub00/vhpl02 1576408540
+AR wash behavioral "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/wash.vhd" sub00/vhpl05 1576408535
+AR spin behavioral "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/spin.vhd" sub00/vhpl07 1576408537
+EN rinse NULL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhd" sub00/vhpl08 1576408538

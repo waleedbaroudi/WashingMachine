@@ -1,0 +1,41 @@
+V3 19
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/clk_divider.vhd" 2019/12/15.14:15:30 P.20131013
+EN work/clk_divider 1576408532 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/clk_divider.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/clk_divider/Behavioral 1576408533 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/clk_divider.vhd" \
+      EN work/clk_divider 1576408532
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/main.vhd" 2019/12/13.19:43:39 P.20131013
+EN work/main 1576408540 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/main.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/main/Behavioral 1576408541 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/main.vhd" \
+      EN work/main 1576408540 CP clk_divider CP wash CP spin CP rinse
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhd" 2019/12/12.17:04:15 P.20131013
+EN work/rinse 1576408538 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/rinse/Behavioral 1576408539 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhd" \
+      EN work/rinse 1576408538
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/spin.vhd" 2019/12/12.17:04:17 P.20131013
+EN work/spin 1576408536 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/spin.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/spin/Behavioral 1576408537 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/spin.vhd" \
+      EN work/spin 1576408536
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/wash.vhd" 2019/12/15.14:15:27 P.20131013
+EN work/wash 1576408534 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/wash.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/wash/Behavioral 1576408535 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/wash.vhd" \
+      EN work/wash 1576408534

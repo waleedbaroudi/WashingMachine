@@ -1,0 +1,15 @@
+NET "clk" LOC = P40;
+NET "dec_led" LOC = P13;
+NET "zero_led" LOC = P16;
+NET "selected[0]" LOC = P6;
+NET "selected[1]" LOC = P3;
+
+NET "state_indicator[0]" LOC = P86;
+NET "state_indicator[1]" LOC = P84;
+NET "state_indicator[2]" LOC = P83;
+NET "state_indicator[3]" LOC = P77;
+
+
+NET "start" LOC = P37;
+NET "reset" LOC = P32;
+NET "reset" CLOCK_DEDICATED_ROUTE = FALSE;

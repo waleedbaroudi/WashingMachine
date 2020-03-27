@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Dec 15 14:10:29 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P40" LEVEL 1;
+COMP "state_indicator<0>" LOCATE = SITE "P86" LEVEL 1;
+COMP "state_indicator<1>" LOCATE = SITE "P84" LEVEL 1;
+COMP "state_indicator<2>" LOCATE = SITE "P83" LEVEL 1;
+COMP "state_indicator<3>" LOCATE = SITE "P77" LEVEL 1;
+COMP "selected<0>" LOCATE = SITE "P6" LEVEL 1;
+COMP "selected<1>" LOCATE = SITE "P3" LEVEL 1;
+COMP "reset" LOCATE = SITE "P32" LEVEL 1;
+PIN reset_pin<0> = BEL "reset" PINNAME PAD;
+PIN "reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "start" LOCATE = SITE "P37" LEVEL 1;
+COMP "dec_led" LOCATE = SITE "P13" LEVEL 1;
+COMP "zero_led" LOCATE = SITE "P16" LEVEL 1;
+SCHEMATIC END;
+

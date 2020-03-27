@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\walee\Desktop\UNIV materials\ELEC204\Projects\LAB5\main.ncd
+OUTFILE=C:\Users\walee\Desktop\UNIV materials\ELEC204\Projects\LAB5\main.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5vq100
+WORKINGDIR=C:\Users\walee\Desktop\UNIV materials\ELEC204\Projects\LAB5
+LICENSE=WebPack
+USER_INFO=211814144_0_0_250

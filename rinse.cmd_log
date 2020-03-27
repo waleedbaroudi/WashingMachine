@@ -1,0 +1,2 @@
+vhdtdtfi -prj LAB5 -o "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhi" -module rinse -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work rinse.vhd 
+vhdtdtfi -prj LAB5 -o "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/LAB5/rinse.vhi" -module rinse -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work rinse.vhd 

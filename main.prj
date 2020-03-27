@@ -1,0 +1,5 @@
+vhdl work "wash.vhd"
+vhdl work "spin.vhd"
+vhdl work "rinse.vhd"
+vhdl work "clk_divider.vhd"
+vhdl work "main.vhd"
